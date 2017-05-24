@@ -14,7 +14,7 @@ namespace Composite_design_pattern
             this.stranka = stranka;
         }
         public override string ispis(){
-            return  ("Ne znam ja niš, ja samo delam.  " + "Zaposlenik: Ime : ," + ime + " funkcija : ," + funkcija + " placa : ," + placa + " ima podredenih : ," + podredeni.Count + ipisStranke());
+            return  ("Ja sam glavni  " + "Ime : " + ime + ", funkcija : " + funkcija + ", placa : " + placa + ", ima podredenih : " + podredeni.Count +", "+ ipisStranke());
         }
         public String ipisStranke()
         {

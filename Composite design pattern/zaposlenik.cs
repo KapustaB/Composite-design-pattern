@@ -26,7 +26,7 @@ namespace Composite_design_pattern
 
         public override string ispis()
         {
-            return ("Ne znam ja niš, ja samo delam.  "+",Zaposlenik: Ime : " + ime + ", funkcija : " + funkcija + ", placa : " + placa + ", ima podredenih : " + podredeni.Count);
+            return ("Ne znam ja niš, ja samo delam.  "+"Ime : " + ime + ", funkcija : " + funkcija + ", placa : " + placa + ", ima podredenih : " + podredeni.Count);
         }
     }
 }
