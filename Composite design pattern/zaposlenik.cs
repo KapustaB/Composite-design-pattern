@@ -24,8 +24,7 @@ namespace Composite_design_pattern
             Console.WriteLine("Radim dan i noc"); 
         }
 
-        public override string ispis()
-        {
+        public override string ispis(){
             return ("Ne znam ja niš, ja samo delam.  "+"Ime : " + ime + ", funkcija : " + funkcija + ", placa : " + placa + ", ima podredenih : " + podredeni.Count);
         }
     }

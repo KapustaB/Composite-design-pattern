@@ -9,8 +9,7 @@ namespace Composite_design_pattern
     class Voditelj : Zaposlenik
     {
         protected String projekt; 
-        public Voditelj(String ime, String funkcija, int placa, String projekt) : base(ime, funkcija, placa)
-        {
+        public Voditelj(String ime, String funkcija, int placa, String projekt) : base(ime, funkcija, placa){
             this.projekt  = projekt;
         }
 
@@ -23,8 +22,7 @@ namespace Composite_design_pattern
         public List<Zaposlenik> getpodredeni(){
             return podredeni;
         }
-        public override string ispis()
-        {
+        public override string ispis(){
             return  ("Ja sam voditelj.  " + "Ime : " + ime + ", funkcija : " + funkcija + ", placa : " + placa + ", ima podredenih : " + podredeni.Count);
         }
 

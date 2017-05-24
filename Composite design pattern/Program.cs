@@ -10,9 +10,9 @@ namespace Composite_design_pattern
     {
         static void Main(string[] args)
         {
-            Direktor CEO = new Direktor("Šribar", "Direktor", 200000,"Voditi firmu"," HDZ");
-            Voditelj voditeljProjektaFontane = new Voditelj("Lolek", "VoditeljProjekta", 12000,"Izgradnja fontane");
-            Voditelj voditeljProjektaRotor   = new Voditelj("Bolek", "VoditeljProjekta", 12000,"Izgradnja rotora");
+            Direktor CEO = new Direktor("Šribar", "Direktor", 200000,"Vodenje firme"," HDZ");
+            Voditelj voditeljProjektaFontane = new Voditelj("Lolek", "Vodenje projekta", 12000,"Izgradnja fontane");
+            Voditelj voditeljProjektaRotor   = new Voditelj("Bolek", "Vodenje projekta", 12000,"Izgradnja rotora");
             Zaposlenik šljaker1 = new Zaposlenik("Borna",    "Šljaker", 2800);
             Zaposlenik šljaker2 = new Zaposlenik("Tomislav", "Šljaker", 2800);
             Zaposlenik šljaker3 = new Zaposlenik("Marijo",   "Šljaker", 2800);
