@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace Composite_design_pattern
 {
-   public abstract class ApstraktnaKlasa
+   
+    public abstract class ApstraktnaKlasa
     {
-        public  abstract String ispis();
+        protected String ime;
+        protected String funkcija;
+        protected int placa;
+        public List<Zaposlenik> podredeni;
+        public abstract String ispis();
     }
 }

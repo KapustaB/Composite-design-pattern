@@ -11,6 +11,7 @@ namespace Composite_design_pattern
         protected String projekt; 
         public Voditelj(String ime, String funkcija, int placa, String projekt) : base(ime, funkcija, placa){
             this.projekt  = projekt;
+            podredeni = new List<Zaposlenik>();
         }
 
         public void add(Zaposlenik z){
@@ -23,7 +24,7 @@ namespace Composite_design_pattern
             return podredeni;
         }
         public override string ispis(){
-            return  ("Ja sam voditelj.  " + "Ime : " + ime + ", funkcija : " + funkcija + ", placa : " + placa + ", ima podredenih : " + podredeni.Count);
+            return  ("Voditelj, " + "Ime : " + ime + ", funkcija : " + funkcija + ", placa : " + placa + ", ima podredenih : " + podredeni.Count);
         }
 
     }
