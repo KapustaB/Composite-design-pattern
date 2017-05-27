@@ -26,21 +26,24 @@ namespace Composite_design_pattern
 
             voditeljProjektaRotor.add(šljaker3);
             voditeljProjektaRotor.add(šljaker4);
-            
 
-
+            Program p = new Program();
             Console.WriteLine(CEO.ispis());
-
-            foreach (Voditelj voditelj in CEO.podredeni)
-            {
-                Console.WriteLine(voditelj.ispis());
-                foreach(Zaposlenik zaposlenik in voditelj.podredeni)
-                {
-                    Console.WriteLine(zaposlenik.ispis());
-                }
-            }
+            p.ispisZaposlenika(CEO.podredeni);
             
         }
+
+        void ispisZaposlenika(List<Zaposlenik> list)
+        {
+            if (list == null) return;
+            foreach (Zaposlenik a in list)
+            {
+                Console.WriteLine(a.ispis());
+                ispisZaposlenika(a.podredeni);
+            }
+            return;
+        }
       
+       
     }
 }
