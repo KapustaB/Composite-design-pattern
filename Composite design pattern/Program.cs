@@ -33,13 +33,13 @@ namespace Composite_design_pattern
             
         }
 
-        void ispisZaposlenika(List<Zaposlenik> list)
+        void ispisZaposlenika(List<Zaposlenik> listaZaposlenika)
         {
-            if (list == null) return;
-            foreach (Zaposlenik a in list)
+            if (listaZaposlenika == null) return;
+            foreach (Zaposlenik zaposlenik in listaZaposlenika)
             {
-                Console.WriteLine(a.ispis());
-                ispisZaposlenika(a.podredeni);
+                Console.WriteLine(zaposlenik.ispis());
+                ispisZaposlenika(zaposlenik.podredeni);
             }
             return;
         }
